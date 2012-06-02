@@ -1,0 +1,856 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"o",
+				"Open"
+			],
+			[
+				"servo",
+				"servo_angle"
+			],
+			[
+				"jean",
+				"JeanLucWeb-Bold"
+			],
+			[
+				"je",
+				"JeanLucWeb-Bold"
+			],
+			[
+				"j",
+				"JeanLucWeb-Bold"
+			],
+			[
+				"text",
+				"text	text-align: left/center/right"
+			],
+			[
+				"Je",
+				"JeanLucWeb-Bold"
+			],
+			[
+				"Jean",
+				"JeanLucWeb-Thin"
+			],
+			[
+				"backgr",
+				"background	background-color: hex"
+			],
+			[
+				"te",
+				"thead"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 1672,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "/* =============================================================================\n   HTML5 Boilerplate CSS: h5bp.com/css\n   ========================================================================== */\n\narticle, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }\naudio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }\naudio:not([controls]) { display: none; }\n[hidden] { display: none; }\n\nhtml { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }\nhtml, button, input, select, textarea { font-family: sans-serif; color: #222; }\nbody { margin: 0; font-size: 1em; line-height: 1.4; }\n\n::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }\n::selection { background: #fe57a1; color: #fff; text-shadow: none; }\n\na { color: #00e; }\na:visited { color: #551a8b; }\na:hover { color: #06e; }\na:focus { outline: thin dotted; }\na:hover, a:active { outline: 0; }\n\nabbr[title] { border-bottom: 1px dotted; }\nb, strong { font-weight: bold; }\nblockquote { margin: 1em 40px; }\ndfn { font-style: italic; }\nhr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }\nins { background: #ff9; color: #000; text-decoration: none; }\nmark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }\npre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }\npre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }\nq { quotes: none; }\nq:before, q:after { content: \"\"; content: none; }\nsmall { font-size: 85%; }\n\nsub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }\nsup { top: -0.5em; }\nsub { bottom: -0.25em; }\n\nul, ol { margin: 1em 0; padding: 0 0 0 40px; }\ndd { margin: 0 0 0 40px; }\nnav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }\n\nimg { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }\n\nsvg:not(:root) { overflow: hidden; }\n\nfigure { margin: 0; }\n\nform { margin: 0; }\nfieldset { border: 0; margin: 0; padding: 0; }\nlabel { cursor: pointer; }\nlegend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }\nbutton, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }\nbutton, input { line-height: normal; }\nbutton, input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }\nbutton[disabled], input[disabled] { cursor: default; }\ninput[type=\"checkbox\"], input[type=\"radio\"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }\ninput[type=\"search\"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }\ninput[type=\"search\"]::-webkit-search-decoration, input[type=\"search\"]::-webkit-search-cancel-button { -webkit-appearance: none; }\nbutton::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }\ntextarea { overflow: auto; vertical-align: top; resize: vertical; }\ninput:valid, textarea:valid {  }\ninput:invalid, textarea:invalid { background-color: #f0dddd; }\n\ntable { border-collapse: collapse; border-spacing: 0; }\ntd { vertical-align: top; }\n\n.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }\n\n\n\n/* ===== Primary Styles ========================================================\n   Author:\n   ========================================================================== */\n/*color reference\n\nSTANDARD BLUE:  #2669B2\nLIGHT BLUE:     #438BC9\nLIGHTER BLUE:   #61A0D6\nDARK BLUE:      #19467E\n\nGREEN:          #80C241\nLIGHTER GREEN:  #80E24C\nORANGE:         #F7941D\n*/\n\n$standard-blu\n\n\n/*background image*/\n\nhtml {\n  background-image:url('/img/background-temp.jpg');\n  background-repeat:no-repeat;\n  background-attachment:fixed;\n  background-position:center; \n\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  -o-background-size: cover;\n  background-size: cover;\n}\n\nbody{\n  font-family: 'Open Sans', sans-serif;\n}\n\n/*main content */\n\n#main-container{\n  width: 760px;\n  margin: 30px auto;\n  background-color: rgba(255,255,255,0.9);\n  min-height: 300px;\n  padding: 15px 25px;\n}\n\nheader{\n  width: 100%;\n  position: relative;\n  margin: 5px 0px;\n  padding-top: 5px;\n  border-top: solid thin #2669B2;\n  border-bottom: solid thin #2669B2;\n}\n\nimg.logo{\n  display: block;\n  height: 80px;\n  margin: 10px auto;\n}\n\nnav{\n  float: left;\n  color: #fff;\n  background-color: #2669B2;\n  padding: 5px;\n  margin: 10px 0 10px 7px;  \n\n  border-radius: 5px; \n  -moz-border-radius: 5px; \n  -webkit-border-radius: 5px; \n\n  a{\n    display: block;\n    height: 20px;\n    float: left;\n    margin-right: 5px;\n    padding: 3px 11px;\n\n    text-align: center;\n    color: #ffffff;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-size: 14px;\n\n    border-radius: 5px; \n    -moz-border-radius: 5px; \n    -webkit-border-radius: 5px;\n    border: solid thin #19467E;\n  }\n\n  a.inactive{\n    background-color: #61A0D6;  /*fallback*/\n\n    background-image: linear-gradient(top, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n    background-image: -o-linear-gradient(top, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n    background-image: -moz-linear-gradient(top, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n    background-image: -webkit-linear-gradient(top, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n    background-image: -ms-linear-gradient(top, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n\n  }\n\n  a.active{\n    background-image: linear-gradient(top, rgb(114,196,67) 29%, rgb(106,161,55) 77%);\n    background-image: -o-linear-gradient(top, rgb(114,196,67) 29%, rgb(106,161,55) 77%);\n    background-image: -moz-linear-gradient(top, rgb(114,196,67) 29%, rgb(106,161,55) 77%);\n    background-image: -webkit-linear-gradient(top, rgb(114,196,67) 29%, rgb(106,161,55) 77%);\n    background-image: -ms-linear-gradient(top, rgb(114,196,67) 29%, rgb(106,161,55) 77%);\n\n  }\n\n  a.inactive:hover{\n    background-color: #438BC9;  /*fallback*/\n\n    background-image: linear-gradient(bottom, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n    background-image: -o-linear-gradient(bottom, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n    background-image: -moz-linear-gradient(bottom, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n    background-image: -webkit-linear-gradient(bottom, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n    background-image: -ms-linear-gradient(bottom, rgb(97,160,214) 46%, rgb(67,138,201) 73%);\n  }\n\n  a.inactive:active{\n    background-image: linear-gradient(bottom, rgb(67,138,201) 29%, rgb(25,71,126) 77%);\n    background-image: -o-linear-gradient(bottom, rgb(67,138,201) 29%, rgb(25,71,126) 77%);\n    background-image: -moz-linear-gradient(bottom, rgb(67,138,201) 29%, rgb(25,71,126) 77%);\n    background-image: -webkit-linear-gradient(bottom, rgb(67,138,201) 29%, rgb(25,71,126) 77%);\n    background-image: -ms-linear-gradient(bottom, rgb(67,138,201) 29%, rgb(25,71,126) 77%);\n  }\n\n  a:visited{\n    color: #ffffff;\n  }\n\n}\n\n.content{\n  margin: 25px;\n}\n\n/*language selection*/\n/*temp disabled*/\n\n/*\n#lang-container{\n  width: 500px;\n  margin: 100px auto;\n  background-color: rgba(255,255,255,0.7);\n  min-height: 300px;\n  padding: 50px 50px 30px 50px;\n}\n\nimg.lang-logo{\n  margin-left: 100px;\n}\n\n.buttons-container{\n  padding: 0px 35px;\n  width: 100%;\n  height: 100px;\n  margin-top: 30px;\n}\n\n.push_button {\n  position: relative;\n  float: left;\n  width:180px;\n  height:40px;\n  color:#FFF;\n  text-decoration:none;\n  line-height:43px;\n  font-family:'Oswald', Helvetica;\n  display: block;\n  margin: 20px;\n  cursor: pointer;\n  text-transform: uppercase;\n  font-size: 20px;\n\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n\n.push_button:before {\n  background:#f0f0f0;\n  background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#D0D0D0), to(#f0f0f0));\n  \n  -webkit-border-radius:5px;\n  -moz-border-radius:5px;\n  border-radius:5px;\n  \n  -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; \n  -moz-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; \n  box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;\n  \n  position: absolute;\n  content: \"\";\n  left: -6px; right: -6px;\n  top: -6px; bottom: -10px;\n  z-index: -1;\n}\n\n.push_button:active {\n  -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;\n  top:5px;\n}\n.push_button:active:before{\n  top: -11px;\n  bottom: -5px;\n  content: \"\";\n}\n\n.push_button:visited{\n  color: #fff;\n}\n\n.blue {\n  text-shadow:-1px -1px 0 #2C7982;\n  background: #438bc9;\n  border:1px solid #2669b2; \n  background-image:-webkit-linear-gradient(top, #438bc9, #2669b2);\n  background-image:-moz-linear-gradient(top, #438bc9, #2669b2);\n  background-image:-ms-linear-gradient(top, #438bc9, #2669b2);\n  background-image:-o-linear-gradient(top, #438bc9, #2669b2);\n  background-image:linear-gradient(top, #438bc9, #2669b2);\n  \n  -webkit-border-radius:5px;\n  -moz-border-radius:5px;\n  border-radius:5px;\n  \n  -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);\n  -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);\n  box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);\n}\n\n.blue:hover {\n  color: #ffffff;\n  background: #438bc9;\n  background-image:-webkit-linear-gradient(top, #2669b2, #438bc9);\n  background-image:-moz-linear-gradient(top, #2669b2, #438bc9);\n  background-image:-ms-linear-gradient(top, #2669b2, #438bc9);\n  background-image:-o-linear-gradient(top, #2669b2, #438bc9);\n  background-image:linear-gradient(top, #2669b2, #438bc9);\n}\n\n.flag{\n  margin: -5px 20px 0px 10px;\n  height: 25px;\n}\n*/\n\n\n.clearfix:before, .clearfix:after { content: \"\"; display: table; }\n.clearfix:after { clear: both; }\n.clearfix { *zoom: 1; }\n\n/* =============================================================================\n   Print Styles\n   ========================================================================== */\n \n@media print {\n  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */\n  a, a:visited { text-decoration: underline; }\n  a[href]:after { content: \" (\" attr(href) \")\"; }\n  abbr[title]:after { content: \" (\" attr(title) \")\"; }\n  .ir a:after, a[href^=\"javascript:\"]:after, a[href^=\"#\"]:after { content: \"\"; }  /* Don't show links for images, or javascript/internal links */\n  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }\n  thead { display: table-header-group; } /* h5bp.com/t */\n  tr, img { page-break-inside: avoid; }\n  img { max-width: 100% !important; }\n  @page { margin: 0.5cm; }\n  p, h2, h3 { orphans: 3; widows: 3; }\n  h2, h3 { page-break-after: avoid; }\n}\n",
+			"file": "content/stylesheet.scss",
+			"file_size": 11499,
+			"file_write_time": 129830302256805828,
+			"settings":
+			{
+				"buffer_size": 11174,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Rules",
+			"settings":
+			{
+				"buffer_size": 1123,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "output/style.css",
+			"settings":
+			{
+				"buffer_size": 13425,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/index.html",
+			"settings":
+			{
+				"buffer_size": 240,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/opportunity.html",
+			"settings":
+			{
+				"buffer_size": 2895,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/partner.html",
+			"settings":
+			{
+				"buffer_size": 883,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/philosophy.html",
+			"settings":
+			{
+				"buffer_size": 79,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/team.html",
+			"settings":
+			{
+				"buffer_size": 1462,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 242.0,
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":",
+				":w - Save"
+			],
+			[
+				":s",
+				":w - Save"
+			],
+			[
+				":ruby",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				":q",
+				"Set Syntax: SQL"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 129.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Geoffrey/Documents/deneb/test/Rules",
+		"/C/Users/Geoffrey/Documents/deneb/nanoc/output/opportunity/index.html",
+		"/C/Users/Geoffrey/Documents/deneb/nanoc/content/team.html",
+		"/C/Users/Geoffrey/Documents/deneb/nanoc/content/contact.html",
+		"/C/Users/Geoffrey/Documents/deneb/nanoc/content/philosophy.html",
+		"/C/Users/Geoffrey/Documents/deneb/nanoc/content/partner.html",
+		"/C/Users/Geoffrey/Documents/deneb/nanoc/content/opportunity.html",
+		"/C/Users/Geoffrey/Documents/deneb/nanoc/content/index.html",
+		"/C/Users/Geoffrey/Documents/deneb/nanoc/output/index.html",
+		"/C/Users/Geoffrey/Documents/deneb/tutorial/content/index.html",
+		"/C/Users/Geoffrey/Documents/deneb/tutorial/layouts/default.html",
+		"/C/Sites/mubi_plus/app/views/layouts/_javascript_footer.html.haml",
+		"/C/Sites/mubi_plus/app/views/layouts/application.html.haml",
+		"/C/xampp/htdocs/wp-content/themes/thematic/header.php",
+		"/C/xampp/htdocs/wp-content/themes/gl-custom/custom.css",
+		"/C/xampp/htdocs/wp-content/themes/thematic/library/styles/typography.css",
+		"/C/xampp/htdocs/wp-content/themes/gl-custom/style.css",
+		"/C/xampp/htdocs/wp-content/themes/thematic/library/styles/default.css",
+		"/C/Users/Geoffrey/Documents/deneb/site/js/script.js",
+		"/C/Users/Geoffrey/Documents/deneb/site/index.html",
+		"/C/Users/Geoffrey/Documents/deneb/site/en/about.html",
+		"/C/Users/Geoffrey/Documents/deneb/site/css/style.css",
+		"/C/xampp/htdocs/index.php",
+		"/C/Users/Geoffrey/Documents/deneb/site/en.html",
+		"/C/Users/Geoffrey/Documents/deneb/site/jp.html",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/public/stylesheets/master.css",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/public/about.html",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/public/stylesheets/text.css",
+		"/C/Users/Geoffrey/Documents/geoffreylitt.com/wp/wp-content/themes/thematic/thematicsamplechildtheme/style.css",
+		"/C/xampp/htdocs/wp-config.php",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/public/vote.html",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/public/contact.html",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/public/platform.html",
+		"/C/Users/Geoffrey/Documents/Low Strung/Low Strung website/events.html",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/public/index.html",
+		"/C/Sites/pulse/app/assets/stylesheets/master.css",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/config.ru",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/public/master.css",
+		"/C/Users/Geoffrey/Documents/Low Strung/Low Strung website/about.html",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/index.html",
+		"/C/Users/Geoffrey/Documents/Bryan campaign/site/master.css",
+		"/C/Users/Geoffrey/AppData/Local/Temp/Rar$DR06.904/nathansmith-960-Grid-System-b0c5b98/README.txt",
+		"/C/Users/Geoffrey/AppData/Local/Temp/Rar$DR01.372/nathansmith-960-Grid-System-b0c5b98/code/demo.html",
+		"/C/Users/Geoffrey/Desktop/databaseScripts/save_schedule.php",
+		"/C/Sites/mubi_plus/app/controllers/home_controller.rb",
+		"/C/Users/Geoffrey/Documents/Low Strung website/contact.html",
+		"/C/Users/Geoffrey/Documents/Low Strung website/store.html",
+		"/C/Users/Geoffrey/Documents/Low Strung website/thegroup.html",
+		"/C/Users/Geoffrey/Documents/Low Strung website/index.html",
+		"/C/Users/Geoffrey/Documents/Low Strung website/themusic.html",
+		"/C/Users/Geoffrey/Documents/Low Strung website/about.html",
+		"/C/Users/Geoffrey/Documents/Low Strung website/events.html",
+		"/C/Users/Geoffrey/Documents/Low Strung website/group.html",
+		"/C/Users/Geoffrey/AppData/Local/Temp/Rar$DI01.015/seeds.rb",
+		"/C/Sites/mubi_plus/app/views/home/dashboard.html.haml",
+		"/C/Sites/mubi_plus/app/views/shared/_subscribe_banner.html.haml",
+		"/C/Sites/mubi_plus/app/assets/stylesheets/home.css.scss",
+		"/C/Sites/mubi_plus/app/assets/stylesheets/films.css.scss",
+		"/C/Sites/mubi_plus/config/locales/tr-TR.yml",
+		"/C/Sites/mubi_plus/app/assets/stylesheets/2-standard.css.scss",
+		"/C/Sites/mubi_plus/config/locales/en-US.yml",
+		"/C/Sites/mubi_plus/app/views/subscriptions/new.html.haml",
+		"/C/Sites/mubi_plus/app/assets/stylesheets/referrals.css.scss",
+		"/C/Sites/mubi_plus/app/assets/stylesheets/application.css",
+		"/C/Users/Geoffrey/Dropbox/Sophomore year/EENG 348/hw2_litt.c",
+		"/C/Users/Geoffrey/Dropbox/Sophomore year/EENG 348/Servo_5degree_test.c",
+		"/C/Users/Geoffrey/Dropbox/Sophomore year/EENG 348/vergence-sensing.c",
+		"/C/Users/Geoffrey/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Geoffrey/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Geoffrey/Documents/MUBI/stella/film.html",
+		"/C/Users/Geoffrey/Documents/MUBI/stella/template.html",
+		"/C/Users/Geoffrey/Documents/MUBI/mockup core/core.html",
+		"/C/Users/Geoffrey/AppData/Local/Temp/Rar$DI01.021/stylesheet.css",
+		"/C/Sites/mubi_plus/app/views/home/help.html.haml",
+		"/C/Sites/mubi_plus/app/views/home/index.html.haml",
+		"/C/Users/Geoffrey/AppData/Roaming/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/C/Users/Geoffrey/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/C/Users/Geoffrey/AppData/Local/Temp/Rar$DI29.854/minion.rb",
+		"/C/Sites/formulahybrid/arduino.c",
+		"/C/Users/Geoffrey/AppData/Local/Temp/Rar$DI00.570/attack.rb",
+		"/C/Sites/mubi_plus/app/views/home/privacy_policy.en-US.html.haml",
+		"/C/Sites/mubi/app/views/dashboard/index.html.erb",
+		"/C/Sites/mubi/app/views/layouts/application_newdesign.html.erb",
+		"/C/Sites/mubi/public/stylesheets/2-standard.css",
+		"/C/Sites/mubi/config/routes.rb",
+		"/C/Users/Geoffrey/Documents/MUBI/mockups/mubi watch banner/all-modified.css",
+		"/C/Sites/mubi_plus/config/routes.rb",
+		"/C/Users/Geoffrey/Documents/MUBI/mockups/mubi watch banner/Your favourite film of the year - Film Forum on mubi.com.htm",
+		"/C/Users/Geoffrey/Documents/MUBI/mockups/mubi watch banner/The Girl on a Motorcycle - Movie info  cast, reviews, trailer on mubi.com.htm",
+		"/C/Sites/mubi/public/newstylesheets/styles/master.css",
+		"/C/Sites/mubi/public/stylesheets/3-specific.css",
+		"/C/Sites/mubi/app/views/layouts/application.html.erb",
+		"/C/Users/Geoffrey/Documents/MUBI/MUBI Turkey Terms and Conditions",
+		"/C/Users/Geoffrey/Documents/MUBI/MUBI+/MUBI Turkey Privacy",
+		"/C/Sites/mubi/app/views/pages/index.html.erb",
+		"/C/Sites/mubi/app/views/home/index.html.erb",
+		"/C/Sites/mubi/app/views/dashboard/spotlight.html.erb",
+		"/C/Users/Geoffrey/Documents/MUBI/mockups/mubi+ help page/help_files/home.css",
+		"/C/Sites/mubi_plus/config/application.rb",
+		"/C/Sites/mubi/app/views/layouts/mourning.html.erb",
+		"/C/Sites/mubi/app/views/shared/_head.html.erb",
+		"/C/Sites/mubi/app/views/shared/_leaderboard_ads.html.erb",
+		"/C/Users/Geoffrey/Documents/MUBI/mockups/mubi+ help page/help.html",
+		"/C/Sites/mubi_plus/app/assets/javascripts/subscriptions.js",
+		"/C/Sites/mubi_plus/app/assets/javascripts/users.js.erb",
+		"/C/Sites/mubi_plus/app/views/films/index.html.haml",
+		"/C/Sites/mubi_plus/app/assets/javascripts/films.js",
+		"/C/Sites/mubi_plus/app/assets/javascripts/application.js",
+		"/C/Sites/mubi_plus/app/assets/javascripts/services/internal/users.js",
+		"/C/Sites/mubi_plus/app/views/shared/_film.html.haml",
+		"/C/Sites/mubi_plus/app/helpers/application_helper.rb",
+		"/C/Sites/mubi/config/locales/bravia/main_page/en-US.yml",
+		"/C/Sites/mubi/app/views/bravia/index.html.erb",
+		"/C/Sites/mubi/app/views/about/team.html.erb",
+		"/C/Users/Geoffrey/Documents/MUBI/newsletter.html",
+		"/C/Sites/mubi/app/views/newsletter_mailer/weekly.html.erb",
+		"/C/Users/Geoffrey/Documents/MUBI/bravia page dev/bravia.html",
+		"/C/Sites/mubi_plus/app/helpers/home_helper.rb",
+		"/C/Sites/mubi_plus/app/models/film.rb",
+		"/C/Sites/mubi_plus/app/helpers/films_helper.rb",
+		"/C/Sites/mubi_plus/app/controllers/website_base_controller.rb",
+		"/C/Sites/mubi_plus/app/controllers/application_controller.rb",
+		"/C/Sites/mubi_plus/config/bitgravity.yml",
+		"/C/Sites/mubi_plus/config/google_analytics.yml",
+		"/C/Sites/mubi_plus/config/geoip.yml",
+		"/C/Sites/mubi_plus/deploy/before_restart.rb",
+		"/C/Sites/mubi_plus/app/services/mubi_user.rb",
+		"/C/Sites/mubi_plus/app/controllers/services/internal/base_controller.rb"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"400px",
+			"3",
+			"2",
+			"1",
+			"0",
+			"img class=\"fb-tab\" src=\"images/fb-tab.png\" />",
+			"<img class=\"fb-tab\" src=\"images/fb-tab.png\" />",
+			"subscribe_banner",
+			"7 day free trial",
+			".subscribe_banner",
+			".subscri",
+			".subscribe_banner",
+			"$color_bg",
+			"();",
+			"<a href=\"#\"><img src=\"images/24-city.jpg\"",
+			"<h2 class=\"film_title\"><a href=\"#\">",
+			".small",
+			".film ",
+			"arial",
+			"film_still",
+			".item",
+			".row.fiveup",
+			".film ",
+			"clearfix",
+			"#wrap",
+			"mode",
+			"logo_europe",
+			"_path",
+			"group",
+			"img",
+			"section",
+			"primary_historic_c",
+			"languages",
+			"aspect_ratio",
+			"duration",
+			".section",
+			"button",
+			"h1",
+			"button",
+			"@",
+			"<img src='/facebook/",
+			"/Photo",
+			"bravia",
+			"use12",
+			"clearfix",
+			"query",
+			"jquery",
+			"document",
+			"colors",
+			"ol ",
+			"ol",
+			"ul {",
+			"ul{",
+			"ul ",
+			"ul",
+			"indent",
+			"indentation",
+			"column",
+			"content",
+			"ajax_white",
+			"ajax_",
+			"ajax_white",
+			"all",
+			"mubi.com",
+			"images",
+			"mubi.com",
+			"watch_link",
+			"days_left",
+			"sion",
+			"YON",
+			"1<",
+			"GUN",
+			"SON",
+			"little_time",
+			"clearfix",
+			"Dave Fleischer, Max Fleischer",
+			"<strong>DIR</strong>",
+			"use3",
+			"http://",
+			"watchfilm.gif",
+			"margin",
+			"content",
+			"margin",
+			"use3",
+			"width=\"184\"",
+			"red",
+			"h2",
+			"item",
+			"row",
+			"bottom",
+			"use12",
+			"wrap",
+			"use9",
+			"mubi_logo",
+			"europe",
+			"mubi.com",
+			"h3",
+			"more_link",
+			"spotlight",
+			"#notebook",
+			"#",
+			"#forum_header",
+			"#forum_topics",
+			"#share",
+			"#share_container",
+			".section_summary",
+			"#cinemas",
+			"id=",
+			"#text_container",
+			"#welcome_box",
+			"gutter",
+			"img",
+			"section_summary",
+			"fb",
+			"<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:fb=\"http://www.facebook.com/2008/fbml\">",
+			"fb",
+			"fbml",
+			"-->",
+			"spotlight",
+			"colors",
+			"use6",
+			"article",
+			"clear",
+			"clearfix",
+			"star_rating",
+			"star",
+			"use12",
+			"h4"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/",
+			" ",
+			"-",
+			".",
+			"<a href=\"#\"><img class=\"fb-tab\" src=\"images/fb-tab.png\" /></a>",
+			"<a href=\"film.html\"><img src=\"images/24-city.jpg\"",
+			"<h2 class=\"film_title\"><a href=\"film.html\">",
+			"<img src='/",
+			"DIR",
+			"days left",
+			"",
+			"more_time",
+			"Dave Fleischer",
+			"<strong>YON</strong>",
+			"watchfilm_turkish.png",
+			"width=\"186\"",
+			".notebook",
+			".forum_header",
+			".forum_topics",
+			".share",
+			".share_container",
+			".cinemas",
+			".text_container",
+			".welcome_box"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "layouts/default.html",
+					"settings":
+					{
+						"buffer_size": 1672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								485,
+								485
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "content/stylesheet.scss",
+					"settings":
+					{
+						"buffer_size": 11174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3776,
+								3776
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1216.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Rules",
+					"settings":
+					{
+						"buffer_size": 1123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								670,
+								670
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "output/style.css",
+					"settings":
+					{
+						"buffer_size": 13425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1880.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "content/index.html",
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "content/opportunity.html",
+					"settings":
+					{
+						"buffer_size": 2895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1904,
+								1904
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 468.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "content/partner.html",
+					"settings":
+					{
+						"buffer_size": 883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								883,
+								883
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "content/philosophy.html",
+					"settings":
+					{
+						"buffer_size": 79,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "content/team.html",
+					"settings":
+					{
+						"buffer_size": 1462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.58844011142,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"subscribe_banner",
+				"app/views/shared/_subscribe_banner.html.haml"
+			],
+			[
+				"views/ind",
+				"app/views/home/index.html.haml"
+			],
+			[
+				"home/ind",
+				"app/views/home/index.html.haml"
+			],
+			[
+				"all",
+				"all.css"
+			],
+			[
+				"layouts",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"helpers",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"spec/contr",
+				"spec/controllers/pages_controller_spec.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"pages",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"spec",
+				"spec/controllers/pages_controller_spec.rb"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"views",
+				"app/views/pages/contact.html.erb"
+			],
+			[
+				"about",
+				"app/views/pages/about.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 164.0,
+	"status_bar_visible": true
+}
