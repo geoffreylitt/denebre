@@ -1,4 +1,4 @@
-{:	data{I"/:ET{:default{	:	lastI"<!doctype html>
+{:	data{I"/:ET{:default{	:	lastI"‘<!doctype html>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+
+  <link rel="shortcut icon" href="/favicon.ico"></link>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
 
@@ -31,12 +33,14 @@
   </header>
 
   <div class="content clearfix cushycms">
-    <h1 id="welcome-to-deneb-re">Welcome to Deneb Re</h1>
+    <h1>Welcome to Deneb RE</h1>
+
 
 <div class="mission-statement">
 Deneb Renewable Energy LLC ("Deneb Re") is developing solar photovoltaic ("PV") power projects in Japan.  We are focusing on larger projects in eastern Japan that will provide power primarily to utility purchasers.
 </div>
 
+<img src="/img/solar-panel.jpg" class="home-img" />
   </div>
 
   <footer>&copy;2012 Deneb Renewable Energy LLC. All Rights Reserved.</footer>
@@ -45,18 +49,15 @@ Deneb Renewable Energy LLC ("Deneb Re") is developing solar photovoltaic ("PV") 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 </body>
-</html>;T:rawI"'Welcome to Deneb Re
-====================
+</html>;T:rawI"Q<h1>Welcome to Deneb RE</h1>
 
-<div class="mission-statement">
-Deneb Renewable Energy LLC ("Deneb Re") is developing solar photovoltaic ("PV") power projects in Japan.  We are focusing on larger projects in eastern Japan that will provide power primarily to utility purchasers.
-</div>;T:preI"5<h1 id="welcome-to-deneb-re">Welcome to Deneb Re</h1>
 
 <div class="mission-statement">
 Deneb Renewable Energy LLC ("Deneb Re") is developing solar photovoltaic ("PV") power projects in Japan.  We are focusing on larger projects in eastern Japan that will provide power primarily to utility purchasers.
 </div>
-;T:	post@
-I"/opportunity/;T{;{	;I"<!doctype html>
+
+<img src="/img/solar-panel.jpg" class="home-img" />;T:pre@:	post@
+I"/opportunity/;T{;{	;I"<<!doctype html>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
@@ -69,6 +70,8 @@ I"/opportunity/;T{;{	;I"<!doctype html>
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+
+  <link rel="shortcut icon" href="/favicon.ico"></link>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
 
@@ -154,7 +157,7 @@ I"Æ<h1 id="the-opportunity">The Opportunity</h1>
 
 <h2 id="a-perfect-combination-of-circumstances">A Perfect Combination of Circumstances</h2>
 <p>The combination of (1) a real need for renewable generation, (2) a Japanese FIT regime with generous pricing, and (3) global oversupply of equipment, makes this the perfect time to develop solar PV projects in Japan.</p>
-;T;@I"/stylesheet/;T{;{;I"ñ-/* =============================================================================
+;T;@I"/stylesheet/;T{;{;I"ô+/* =============================================================================
    HTML5 Boilerplate CSS: h5bp.com/css
    ========================================================================== */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
@@ -375,7 +378,7 @@ td {
    Author: Geoffrey Litt
    ========================================================================== */
 html {
-  background-image: url("img/background.jpg");
+  background-image: url("/img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -462,7 +465,9 @@ nav {
     color: #ffffff; }
 
 .content {
-  margin: 0 25px 25px 25px; }
+  margin: 0 25px 25px 25px;
+  /*home*/
+  /*Partner with Deneb*/ }
   .content h1 {
     font-size: 16px;
     font-weight: normal;
@@ -481,7 +486,31 @@ nav {
     font-size: 16px;
     margin-top: 10px; }
   .content img.home-img {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 5px; }
+  .content .mission-statement {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .content .left-content {
+    width: 480px;
+    margin-right: 20px;
+    float: left; }
+  .content .sidebar {
+    width: 180px;
+    float: left;
+    margin-top: 10px;
+    background-color: #61a0d6;
+    padding: 0 15px;
+    color: #fff; }
+    .content .sidebar p {
+      font-size: 14px;
+      margin-top: 0; }
+    .content .sidebar h2 {
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-bottom: 5px; }
   .content img.bio {
     float: left;
     margin: 10px 30px 30px 0; }
@@ -618,57 +647,7 @@ img.lang-logo{
 
 .clearfix {
   *zoom: 1; }
-
-/* =============================================================================
-   Print Styles
-   ========================================================================== */
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important; }
-
-  /* Black prints faster: h5bp.com/s */
-  a, a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: ""; }
-
-  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group; }
-
-  /* h5bp.com/t */
-  tr, img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2, h3 {
-    page-break-after: avoid; } }
-;T;	I"./* =============================================================================
+;T;	I"P,/* =============================================================================
    HTML5 Boilerplate CSS: h5bp.com/css
    ========================================================================== */
 
@@ -892,8 +871,47 @@ nav{
     margin-top: 10px;
   }
 
+  /*home*/
+
   img.home-img{
     width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .mission-statement{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  /*Partner with Deneb*/
+
+  .left-content{
+    width: 480px;
+    margin-right: 20px;
+    float: left;
+  }
+
+  .sidebar{
+    width: 180px;
+    float: left;
+    margin-top: 10px;
+
+    background-color: $blue-lighter;
+    padding: 0 15px;
+    color: #fff;
+
+    p{
+      font-size: 14px;
+      margin-top: 0;
+    }
+
+    h2{
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
   }
 
   img.bio{
@@ -1036,27 +1054,8 @@ img.lang-logo{
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
-
-/* =============================================================================
-   Print Styles
-   ========================================================================== */
- 
-@media print {
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
-}
 ;T;
-@I"/style/;T{;{	;I"„7<!doctype html>
+@I"/style/;T{;{	;I"„7<!doctype html>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
@@ -2281,7 +2280,7 @@ img.logo{
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
-;T;@I"/contact/;T{;{	;I"d<!doctype html>
+;T;@I"/contact/;T{;{	;I"ù<!doctype html>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
@@ -2294,6 +2293,8 @@ img.logo{
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+
+  <link rel="shortcut icon" href="/favicon.ico"></link>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
 
@@ -2326,7 +2327,7 @@ img.logo{
 </body>
 </html>;T;	I"Contact info!;T;
 I"<p>Contact info!</p>
-;T;@!I"/team/;T{;{	;I"k<!doctype html>
+;T;@ I"/team/;T{;{	;I"§<!doctype html>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
@@ -2339,6 +2340,8 @@ I"<p>Contact info!</p>
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+
+  <link rel="shortcut icon" href="/favicon.ico"></link>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
 
@@ -2394,7 +2397,7 @@ I"ñ<p><strong>David G. Litt</strong> is the Chief Executive Officer of Deneb R
 <p>David attended Yale College (BA, summa cum laude, 1984) and the University of Chicago Law School (JD, with honors, 1988).  He also attended the Inter-University Center for Japanese Language Studies.  After law school, he served as a judicial clerk for Chief Judge Alfred T. Goodwin of the US Ninth Circuit Court of Appeals, and for Justice Anthony M. Kennedy of the U.S. Supreme Court.</p>
 
 <p>David has lived in Tokyo for over 12 years in total.  He is a U.S. citizen and a permanent resident of Japan.  He is married with two children who are now attending university in the U.S.  He is an avid cyclist.</p>
-;T;@'I"/img/background-temp/;T{;{ I"/img/background/;T{;{ I"/img/david-litt/;T{;{ I"/img/Japan/;T{;{ I"/img/japanese/;T{;{ I"/img/logo-blue/;T{;{ I"/img/logo-white/;T{;{ I"/img/logo/;T{;{ I"/img/United-States/;T{;{ I"/img/us/;T{;{ I"/partner/;T{;{	;I"ﬂ	<!doctype html>
+;T;@&I"/img/background-temp/;T{;{ I"/img/background/;T{;{ I"/img/david-litt/;T{;{ I"/img/Japan/;T{;{ I"/img/japanese/;T{;{ I"/img/logo-blue/;T{;{ I"/img/logo-white/;T{;{ I"/img/logo/;T{;{ I"/img/United-States/;T{;{ I"/img/us/;T{;{ I"/partner/;T{;{	;I"∑<!doctype html>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
@@ -2407,6 +2410,8 @@ I"ñ<p><strong>David G. Litt</strong> is the Chief Executive Officer of Deneb R
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+
+  <link rel="shortcut icon" href="/favicon.ico"></link>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
 
@@ -2427,7 +2432,8 @@ I"ñ<p><strong>David G. Litt</strong> is the Chief Executive Officer of Deneb R
   </header>
 
   <div class="content clearfix cushycms">
-    <h1 id="partner-with-deneb-re">Partner with Deneb Re</h1>
+    <div class="left-content">
+  <h1 id="partner-with-deneb-re">Partner with Deneb Re</h1>
 
 <p>Deneb Re is interested in working with partners on major projects, and we are actively building relationships.</p>
 
@@ -2448,6 +2454,11 @@ I"ñ<p><strong>David G. Litt</strong> is the Chief Executive Officer of Deneb R
 Setagaya-ku, Tokyo 158-0093<br />
 Japan</p>
 
+</div>
+<div class="sidebar cushycms">
+  <h2>Why the name Deneb?</h2>
+  <p>Deneb is a star in the constellation Cygnus (the Swan).  It is very far away from earth -- approximately 1400 light years -- but appears as one of the 20 brightest stars to the naked eye.  Deneb is approximately 60,000 times as bright as the sun.  Now THAT would be a great neighborhood for solar PV!</p>
+</div>
   </div>
 
   <footer>&copy;2012 Deneb Renewable Energy LLC. All Rights Reserved.</footer>
@@ -2497,7 +2508,7 @@ I"á<h1 id="partner-with-deneb-re">Partner with Deneb Re</h1>
 1-32-13 Kaminoge<br />
 Setagaya-ku, Tokyo 158-0093<br />
 Japan</p>
-;T;@KI"/philosophy/;T{;{	;I"ß<!doctype html>
+;T;@JI"/philosophy/;T{;{	;I"‡<!doctype html>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
@@ -2510,6 +2521,8 @@ Japan</p>
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+
+  <link rel="shortcut icon" href="/favicon.ico"></link>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
 
@@ -2549,4 +2562,4 @@ Coming soon.;T;
 I"R<h1 id="corporate-philosophy">Corporate Philosophy</h1>
 
 <p>Coming soon.</p>
-;T;@QI"/img/solar-panel/;T{;{ :versioni
+;T;@PI"/img/solar-panel/;T{;{ I"/img/solar-panel-orig/;T{;{ I"$/img/iStock_000007441413Medium/;T{;{ I"#/img/iStock_000016823462Small/;T{;{ I"/favicon/;T{;{ :versioni

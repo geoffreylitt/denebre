@@ -14,14 +14,22 @@
 #   because "*" matches zero or more characters.
 
 compile '/stylesheet/' do
-  filter :relativize_paths, :type =>
   filter :sass, :syntax => :scss
 end
 
 compile '/team/' do
-  filter :relativize_paths, :type => :html
   filter :kramdown
   layout 'team-layout'
+  layout 'default'
+end
+
+compile '/' do
+  layout 'default'
+end
+
+compile '/partner/' do
+  filter :kramdown
+  layout 'partner-layout'
   layout 'default'
 end
 
@@ -29,7 +37,6 @@ compile '*' do
   if item.binary?
     # don't filter binary items
   else
-    filter :relativize_paths, :type => :html
     filter :kramdown
     layout 'default'
   end

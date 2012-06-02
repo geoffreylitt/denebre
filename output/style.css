@@ -219,7 +219,7 @@ td {
    Author: Geoffrey Litt
    ========================================================================== */
 html {
-  background-image: url("img/background.jpg");
+  background-image: url("/img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -306,7 +306,9 @@ nav {
     color: #ffffff; }
 
 .content {
-  margin: 0 25px 25px 25px; }
+  margin: 0 25px 25px 25px;
+  /*home*/
+  /*Partner with Deneb*/ }
   .content h1 {
     font-size: 16px;
     font-weight: normal;
@@ -325,7 +327,31 @@ nav {
     font-size: 16px;
     margin-top: 10px; }
   .content img.home-img {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 5px; }
+  .content .mission-statement {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .content .left-content {
+    width: 480px;
+    margin-right: 20px;
+    float: left; }
+  .content .sidebar {
+    width: 180px;
+    float: left;
+    margin-top: 10px;
+    background-color: #61a0d6;
+    padding: 0 15px;
+    color: #fff; }
+    .content .sidebar p {
+      font-size: 14px;
+      margin-top: 0; }
+    .content .sidebar h2 {
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-bottom: 5px; }
   .content img.bio {
     float: left;
     margin: 10px 30px 30px 0; }
@@ -462,53 +488,3 @@ img.lang-logo{
 
 .clearfix {
   *zoom: 1; }
-
-/* =============================================================================
-   Print Styles
-   ========================================================================== */
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important; }
-
-  /* Black prints faster: h5bp.com/s */
-  a, a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: ""; }
-
-  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group; }
-
-  /* h5bp.com/t */
-  tr, img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2, h3 {
-    page-break-after: avoid; } }
