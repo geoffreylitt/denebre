@@ -17,20 +17,45 @@ compile '/stylesheet/' do
   filter :sass, :syntax => :scss
 end
 
-compile '/team/' do
-  filter :kramdown
-  layout 'team-layout'
-  layout 'default'
-end
-
 compile '/' do
-  layout 'default'
 end
 
-compile '/partner/' do
-  filter :kramdown
-  layout 'partner-layout'
-  layout 'default'
+#en rules
+
+compile '/en/team/' do
+  layout 'default-en'
+end
+
+compile '/en/partner/' do
+  layout 'default-en'
+end
+
+compile '/en/*' do
+  if item.binary?
+    # don't filter binary items
+  else
+    filter :kramdown
+    layout 'default-en'
+  end
+end
+
+#ja rules
+
+compile '/ja/team/' do
+  layout 'default-ja'
+end
+
+compile '/ja/partner/' do
+  layout 'default-ja'
+end
+
+compile '/ja/*' do
+  if item.binary?
+    # don't filter binary items
+  else
+    filter :kramdown
+    layout 'default-ja'
+  end
 end
 
 compile '*' do
@@ -38,7 +63,7 @@ compile '*' do
     # don't filter binary items
   else
     filter :kramdown
-    layout 'default'
+    layout 'default-en'
   end
 end
 

@@ -306,20 +306,20 @@ nav {
     color: #ffffff; }
 
 .ja nav a {
-  display: block;
-  height: 20px;
-  float: left;
-  margin-right: 5px;
-  padding: 3px 33px;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: solid thin #19467e; }
+    display: block;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+    padding: 3px 33px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: solid thin #19467e; }
 
 .content {
   margin: 0 25px 25px 25px;
@@ -371,8 +371,7 @@ nav {
   .content img.bio {
     float: left;
     margin: 10px 30px 30px 0;
-    width: 170px;
-    border: solid thin black; }
+    width: 170px; }
   .content .bio-content {
     width: 500px;
     float: left; }

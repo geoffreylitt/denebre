@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Deneb Re</title>
+  <title>Deneb Re - <%= @item[:title] %></title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -22,10 +22,12 @@
 <div role="main" id="lang-container">
   <img class="lang-logo" src="img/logo.png" />
   <div class="buttons-container">
-    <a class="push_button blue" href="./en">
+    <a class="push_button blue" href="en/about.html">
+      <img src="img/us.png" class="flag"/>
       English
     </a>
-    <a class="push_button blue" href="./ja">
+    <a class="push_button blue" href="jp/about.html">
+      <img src="img/japanese.png" class="flag"/>
       日本語
     </a>
   </div>

@@ -1,0 +1,141 @@
+Crashlog created at 2013-01-16 18:04:54 -0500
+
+=== MESSAGE:
+
+LoadError: cannot load such file -- fssm
+Try installing the 'fssm' gem (`gem install fssm`) and then re-running the command.
+
+=== COMPILATION STACK:
+
+  (empty)
+
+=== BACKTRACE:
+
+  0. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli/commands/watch.rb:14:in `require'
+  1. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli/commands/watch.rb:14:in `run'
+  2. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  3. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  4. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  5. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli/command_runner.rb:13:in `call'
+  6. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  7. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  8. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  9. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  10. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  11. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli.rb:52:in `block in run'
+  12. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  13. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  14. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib/nanoc/cli.rb:50:in `run'
+  15. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/bin/nanoc:19:in `<top (required)>'
+  16. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/bin/nanoc:19:in `load'
+  17. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/bin/nanoc:19:in `<main>'
+  18. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/bin/ruby_noexec_wrapper:14:in `eval'
+  19. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/bin/ruby_noexec_wrapper:14:in `<main>'
+
+=== VERSION INFORMATION:
+
+nanoc 3.4.3 © 2007-2012 Denis Defreyne.
+Running ruby 1.9.3 (2012-04-20) on x86_64-darwin12.1.0 with RubyGems 1.8.24.
+
+=== SYSTEM INFORMATION:
+
+Darwin dhcp-128-36-51-26.wireless.yale.edu 12.2.1 Darwin Kernel Version 12.2.1: Thu Oct 18 16:32:48 PDT 2012; root:xnu-2050.20.9~2/RELEASE_X86_64 x86_64
+
+=== INSTALLED GEMS:
+
+  adsf 1.1.1
+  bundler 1.2.2
+  colored 1.2
+  cri 2.3.0
+  kramdown 0.14.1
+  nanoc 3.4.3
+  rack 1.4.4
+  sass 3.2.1
+
+=== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/tmp/launch-Amm5l2/Render"
+Apple_Ubiquity_Message => "/tmp/launch-2jrSoR/Apple_Ubiquity_Message"
+BUNDLE_BIN_PATH => "/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.2.2/bin/bundle"
+BUNDLE_GEMFILE => "/Users/gklitt/Dropbox/dev/deneb/website/site/Gemfile"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-gheoMr/org.macosforge.xquartz:0"
+GEM_HOME => "/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb"
+GEM_PATH => "/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb:/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@global"
+HOME => "/Users/gklitt"
+IRBRC => "/Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/.irbrc"
+LANG => "en_US.UTF-8"
+LOGNAME => "gklitt"
+MY_RUBY_HOME => "/Users/gklitt/.rvm/rubies/ruby-1.9.3-p194"
+PATH => "/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/bin:/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/gklitt/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin"
+PWD => "/Users/gklitt/dev/deneb/website/site"
+RUBYOPT => "-I/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.2.2/lib -rbundler/setup"
+RUBY_VERSION => "ruby-1.9.3-p194"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-f5HU3f/Listeners"
+TERM => "xterm-256color"
+TERM_PROGRAM => "Apple_Terminal"
+TERM_PROGRAM_VERSION => "309"
+TERM_SESSION_ID => "30B45385-E141-42DC-ABAB-6A857906FB66"
+TMPDIR => "/var/folders/b0/htdzq03x7hx1x49fbq3m4zth0000gn/T/"
+USER => "gklitt"
+_ => "/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/bin/nanoc"
+_ORIGINAL_GEM_PATH => "/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb:/Users/gklitt/.rvm/gems/ruby-1.9.3-p194@global"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:0"
+__array_start => "0"
+_first => "0"
+_second => "1"
+escape_flag => "1"
+rvm_bin_path => "/Users/gklitt/.rvm/bin"
+rvm_delete_flag => "0"
+rvm_path => "/Users/gklitt/.rvm"
+rvm_prefix => "/Users/gklitt"
+rvm_ruby_string => "ruby-1.9.3-p194"
+rvm_sticky_flag => "1"
+rvm_version => "1.15.8 (stable)"
+
+=== GEMFILE.LOCK:
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    adsf (1.1.1)
+      rack (>= 1.0.0)
+    colored (1.2)
+    cri (2.3.0)
+      colored (>= 1.2)
+    kramdown (0.14.1)
+    nanoc (3.4.3)
+      cri (~> 2.2)
+    rack (1.4.4)
+    sass (3.2.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf
+  kramdown
+  nanoc
+  sass
+
+=== $LOAD_PATH:
+
+  0. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib
+  1. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/sass-3.2.1/lib
+  2. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/nanoc-3.4.3/lib
+  3. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/kramdown-0.14.1/lib
+  4. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/cri-2.3.0/lib
+  5. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/colored-1.2/lib
+  6. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/adsf-1.1.1/lib
+  7. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@deneb/gems/rack-1.4.4/lib
+  8. /Users/gklitt/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.2.2/lib
+  9. /Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1
+  10. /Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/x86_64-darwin12.1.0
+  11. /Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby
+  12. /Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/vendor_ruby/1.9.1
+  13. /Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/vendor_ruby/1.9.1/x86_64-darwin12.1.0
+  14. /Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/vendor_ruby
+  15. /Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1
+  16. /Users/gklitt/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/x86_64-darwin12.1.0
